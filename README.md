@@ -4,28 +4,79 @@ This project is a content-based movie recommendation system built as part of the
 
 The system recommends movies based on textual similarity using **Count Vectorizer** and **Cosine Similarity**.
 
-# Project Structure
+---
 
-# Week 1
+## Project Overview
 
-Week 1 started with learning basics of python and jupyter notebook using tutorials available online.
+The project was completed in four stages across four weeks, gradually building towards a full recommendation system.
 
-# Week 2
+---
 
-Week 2 involved learning the basics of python libraries: Pandas, Numpy and Matplotlib. 
-The folder named "week2" contains a csv file having data of 5000 movies and a file titled bar_chart.ipynb containing a code creating a bar chart of number of movies vs genre
+## Week 1: Python & Jupyter Basics
 
-# Week 3
+Week 1 focused on learning the basics of Python programming and working with Jupyter Notebook using introductory tutorials.
 
-This week involved learning to merge datasets and then learning the basics of count vectorizer and cosine similarity.
-Then the four csv files titled credits.csv, keywords.csv, movies_metadata.csv and links.csv were merged to form master_dataset.csv
-After which using NLTK, I wrote a code titled master_dataset_new.ipynb which cleans and preprocesses a master_dataset.csv. It handles missing values, extracts cast and director info, normalizes text, stems keywords, and creates a combined "soup" of features (keywords + cast + director + genres) to prepare the dataset for content-based movie recommendation.
+---
 
-# Week 4
+## Week 2: Data Analysis & Visualization
 
-The final week of project started with the code master_dataset_final.ipynb which uses the preprocessed master dataset from week 3 and reduces it to only the features required for a content-based recommendation system. It removes irrelevant metadata, filters out movies with missing popularity, director, or release date, ranks movies by popularity, and retains the top 2,500 titles. The final dataset contains only the movie title, release date, director, and a combined feature “soup” used for similarity computation.
-Then this final dataset is used to create the reccomedation system which is coded infinal_project.ipynb
+In Week 2, core Python libraries were introduced:
+- NumPy
+- Pandas
+- Matplotlib
 
+The `week2/` folder contains:
+- A CSV file with data for 5,000 movies
+- `bar_chart.ipynb`, which plots a bar graph showing the number of movies per genre
 
-PS: Due to github file size limits I was not able to upload the csv files so the links are provided under a file named "links to csv"
+---
 
+## Week 3: Dataset Merging & Text Processing
+
+Week 3 involved:
+- Learning how to merge datasets using Pandas
+- Understanding Count Vectorizer and Cosine Similarity
+
+The following datasets were merged:
+- `credits.csv`
+- `keywords.csv`
+- `movies_metadata.csv`
+- `links.csv`
+
+This resulted in `master_dataset.csv`.
+
+The notebook `master_dataset_new.ipynb` performs data cleaning and preprocessing:
+- Handles missing values
+- Extracts cast and director information
+- Normalizes and stems text using NLTK
+- Creates a combined feature “soup” (keywords, cast, director, genres)
+
+This processed dataset is used for content-based recommendation.
+
+---
+
+## Week 4: Final Recommendation System
+
+In the final week:
+- `master_dataset_final.ipynb` reduces the dataset to only essential features
+- Movies with missing popularity, director, or release date are removed
+- Movies are ranked by popularity and the top 2,500 titles are retained
+
+The final dataset contains:
+- Title
+- Release date
+- Director
+- Combined feature “soup”
+
+The recommendation system is implemented in `final_project.ipynb`, which computes similarity scores and generates movie recommendations.
+
+---
+
+## Dataset Access
+
+Due to GitHub file size limits, CSV files are not included in this repository.
+
+All dataset download links are provided in:
+- `DATASET_LINKS.md`
+
+Download the datasets and place them in the appropriate folders before running the notebooks.
