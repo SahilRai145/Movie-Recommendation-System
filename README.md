@@ -19,5 +19,9 @@ The folder named "week2" contains a csv file having data of 5000 movies and a fi
 
 This week involved learning to merge datasets and then learning the basics of count vectorizer and cosine similarity.
 Then the four csv files titled credits.csv, keywords.csv, movies_metadata.csv and links.csv were merged to form master_dataset.csv
-After which using NLTK, 
+After which using NLTK, I wrote a code titled master_dataset_new.ipynb which cleans and preprocesses a master_dataset.csv. It handles missing values, extracts cast and director info, normalizes text, stems keywords, and creates a combined "soup" of features (keywords + cast + director + genres) to prepare the dataset for content-based movie recommendation.
+
+# Week 4
+
+The final week of project involved 
 
