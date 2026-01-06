@@ -23,5 +23,9 @@ After which using NLTK, I wrote a code titled master_dataset_new.ipynb which cle
 
 # Week 4
 
-The final week of project involved 
+The final week of project started with the code master_dataset_final.ipynb which uses the preprocessed master dataset from week 3 and reduces it to only the features required for a content-based recommendation system. It removes irrelevant metadata, filters out movies with missing popularity, director, or release date, ranks movies by popularity, and retains the top 2,500 titles. The final dataset contains only the movie title, release date, director, and a combined feature “soup” used for similarity computation.
+Then this final dataset is used to create the reccomedation system which is coded infinal_project.ipynb
+
+
+PS: Due to github file size limits I was not able to upload the csv files so the links are provided under a file named "links to csv"
 
