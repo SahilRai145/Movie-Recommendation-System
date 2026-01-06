@@ -17,5 +17,7 @@ The folder named "week2" contains a csv file having data of 5000 movies and a fi
 
 # Week 3
 
-This week involved learning to merge datasets and learning the basics
+This week involved learning to merge datasets and then learning the basics of count vectorizer and cosine similarity.
+Then the four csv files titled credits.csv, keywords.csv, movies_metadata.csv and links.csv were merged to form master_dataset.csv
+After which using NLTK, 
 
